@@ -218,7 +218,7 @@
                 <script>
                     function loadDoc() {
                         var xmlhttp = new XMLHttpRequest();
-                        var url = "http://206.189.38.188:8080/myrs/webresources/pasien/cariNamaPasien?nama=Bambang";
+                        var url = "http://206.189.38.188:8080/myrs/webresources/pasien/cariNamaPasien?nama="+ nama.value;
                         xmlhttp.onreadystatechange = function () {
                             if (this.readyState == 4 && this.status == 200) {
                                 myFunction(this.responseText);
